@@ -1,0 +1,8 @@
+<h1>Edit <%= @user.name %>'s Info</h1>
+
+<%= form_for @user do |f| %>
+  Name: <br> <%= f.text_field :name %><br> 
+  Email: <br> <%=  f.email_field :email, :placeholder => 'example@example.com' %><br> 
+  Password: <br> <%=  f.password_field :password %><br> 
+  <%= f.submit 'Update User' %>
+<% end %>
